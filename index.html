@@ -3,48 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>孫可恩 — 履歷</title>
+  <title>孫可恩 — 個人履歷</title>
   <style>
-    :root{
+    :root {
       --primary: #2c3e50;
-      --bg:#f7f7f8;
-      --card:#ffffff;
-      --muted:#6b6b6b;
-      --accent:#3498db;
-      --border:#e6e6e6;
-      --maxw:850px;
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --muted: #6b6b6b;
+      --accent: #3498db;
+      --border: #e6e6e6;
     }
-    body{
-      background:var(--bg);
+    body {
+      background: var(--bg);
       font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-      color:#222;
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-      padding:32px 15px;
-      margin:0;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      margin: 0;
     }
-    .container{
-      width:100%;
-      max-width:var(--maxw);
-      background:var(--card);
-      border-radius:12px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.08);
-      border:1px solid var(--border);
-      overflow:hidden;
-      display:grid;
+    .container {
+      width: 100%;
+      max-width: 850px;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+      display: grid;
       grid-template-columns: 1fr 280px;
+      overflow: hidden;
     }
-    header{
-      grid-column:1 / -1;
-      padding:30px 40px;
-      background: #fff;
-      border-bottom:1px solid var(--border);
-      display:flex;
-      align-items:center;
-      gap:25px;
+    header {
+      grid-column: 1 / -1;
+      padding: 30px 40px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 25px;
     }
-    /* 照片樣式 */
     .avatar-img {
       width: 100px;
       height: 100px;
@@ -53,109 +49,105 @@
       border: 2px solid var(--border);
       background: #eee;
     }
-    .header-info h1{ margin:0; font-size:28px; letter-spacing: 2px; color: var(--primary); }
-    .header-info p.lead{ margin:5px 0 0 0; color:var(--accent); font-weight:bold; font-size:16px; }
+    .header-info h1 { margin: 0; font-size: 28px; color: var(--primary); letter-spacing: 2px; }
+    .header-info p.lead { margin: 5px 0 0 0; color: var(--accent); font-weight: bold; }
+    .contact-top { margin-left: auto; text-align: right; font-size: 14px; color: var(--muted); }
     
-    .contact-top { margin-left:auto; text-align:right; font-size:14px; color: var(--muted); line-height: 1.8; }
+    main { padding: 30px 40px; }
+    aside { padding: 30px 25px; border-left: 1px solid var(--border); background: #fafafa; }
     
-    main{ padding:30px 40px; line-height:1.7; }
-    aside{ padding:30px 25px; border-left:1px solid var(--border); background:#fafafa; font-size:14px; }
-    
-    section{ margin-bottom:25px; }
-    h2{ font-size:16px; margin:0 0 12px 0; color:var(--primary); border-left: 4px solid var(--accent); padding-left: 10px; }
+    section { margin-bottom: 30px; }
+    h2 { font-size: 16px; margin-bottom: 15px; color: var(--primary); border-left: 4px solid var(--accent); padding-left: 10px; }
     
     .exp-item { margin-bottom: 20px; }
-    .exp-year { font-weight: bold; color: var(--accent); font-size: 14px; margin-bottom: 5px; }
+    .year-label { font-weight: bold; color: var(--accent); font-size: 14px; display: block; margin-bottom: 5px; }
+    ul { padding-left: 20px; margin: 5px 0; }
+    li { margin-bottom: 6px; line-height: 1.6; }
+
+    .pill { display: inline-block; padding: 5px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--border); font-size: 13px; margin: 0 5px 8px 0; color: var(--primary); }
     
-    ul { padding-left:18px; margin:5px 0; }
-    li { margin-bottom: 5px; }
-    
-    .pill { display:inline-block; padding:5px 12px; border-radius:999px; background:#fff; border:1px solid var(--border); font-size:13px; color:var(--primary); margin: 0 5px 8px 0; }
-    
-    @media (max-width:800px){
-      .container{ grid-template-columns:1fr; }
+    @media (max-width: 800px) {
+      .container { grid-template-columns: 1fr; }
       header { flex-direction: column; text-align: center; }
       .contact-top { text-align: center; margin: 15px 0 0 0; }
-      aside { border-left:none; border-top:1px solid var(--border); }
+      aside { border-left: none; border-top: 1px solid var(--border); }
     }
   </style>
 </head>
 <body>
-  <article class="container">
+  <div class="container">
     <header>
       <img src="profile.jpg" alt="孫可恩" class="avatar-img" onerror="this.src='https://via.placeholder.com/100?text=SUN'">
-      
       <div class="header-info">
-        <h1>孫可恩 [cite: 1]</h1>
-        <p class="lead">SUN, KO-EN [cite: 2]</p>
+        <h1>孫可恩</h1>
+        <p class="lead">SUN, KO-EN</p>
       </div>
-      
       <div class="contact-top">
-        <div>📞 0960-582-510 </div>
-        <div>✉️ corrinesun0104@gmail.com </div>
+        <div>📞 0960-582-510</div>
+        <div>✉️ corrinesun0104@gmail.com</div>
       </div>
     </header>
 
     <main>
       <section>
-        <h2>經歷 [cite: 11]</h2>
+        <h2>經歷</h2>
         <div class="exp-item">
-          <div class="exp-year">2022 - 2025 [cite: 21]</div>
+          <span class="year-label">2022 - 2025</span>
           <ul>
-            <li>擔任松山高中熱舞社副社長 [cite: 23]</li>
-            <li>參與八校與二十校聯合迎新舞展演出 [cite: 24, 25]</li>
-            <li>參與張榮發基金會公益表演 [cite: 25]</li>
-            <li>擔任一年學藝股長 [cite: 22]</li>
+            <li>擔任松山高中熱舞社副社長</li>
+            <li>參與八校與二十校聯合迎新舞展演出</li>
+            <li>參與張榮發基金會公益表演</li>
+            <li>擔任一年學藝股長</li>
           </ul>
         </div>
         <div class="exp-item">
-          <div class="exp-year">2019 - 2022 [cite: 17]</div>
+          <span class="year-label">2019 - 2022</span>
           <ul>
-            <li>通過全民英檢中級初試與全民中檢中高級 [cite: 18, 19]</li>
-            <li>擔任兩年學藝股長 [cite: 20]</li>
+            <li>通過全民英檢中級初試與全民中檢中高級</li>
+            <li>擔任兩年學藝股長</li>
           </ul>
         </div>
         <div class="exp-item">
-          <div class="exp-year">2017 - 2019 [cite: 12]</div>
+          <span class="year-label">2017 - 2019</span>
           <ul>
-            <li>校內書法比賽特優、作文比賽佳作 [cite: 13, 14]</li>
-            <li>以區長獎畢業 [cite: 15]</li>
-            <li>參與校外機械獸比賽 [cite: 16]</li>
+            <li>校內書法比賽特優、作文比賽佳作</li>
+            <li>以區長獎畢業</li>
+            <li>參與校外機械獸比賽</li>
           </ul>
         </div>
       </section>
 
       <section>
-        <h2>學歷 [cite: 31]</h2>
+        <h2>學歷</h2>
         <ul>
-          <li>台北市立松山高級中學 (2022 - 2025) [cite: 36, 37, 40]</li>
-          <li>新北市私立竹林高級中學國中部 (2019 - 2022) [cite: 33, 35, 39]</li>
-          <li>新北市私立竹林國民小學 (2013 - 2019) [cite: 32, 34, 38]</li>
+          <li>台北市立松山高級中學 (2022 - 2025)</li>
+          <li>新北市私立竹林高級中學國中部 (2019 - 2022)</li>
+          <li>新北市私立竹林國民小學 (2013 - 2019)</li>
         </ul>
       </section>
     </main>
 
     <aside>
       <section>
-        <h2>核心技能 [cite: 6]</h2>
-        <div class="pill">變通開創 [cite: 7]</div>
-        <div class="pill">時間/金錢規劃 [cite: 8]</div>
-        <div class="pill">語文表達 [cite: 9]</div>
-        <div class="pill">資料整合與分析 [cite: 10]</div>
+        <h2>核心技能</h2>
+        <div class="pill">變通開創</div>
+        <div class="pill">時間/金錢規劃</div>
+        <div class="pill">語文表達</div>
+        <div class="pill">資料整合與分析</div>
       </section>
 
       <section>
-        <h2>語言能力 [cite: 26]</h2>
-        <p><strong>英文：</strong>學測 11 級分 / 聽力 A [cite: 27, 28]</p>
-        <p><strong>中文：</strong>中檢中高級通過 [cite: 29]</p>
-        <p><strong>韓文：</strong>自主學習中 [cite: 30]</p>
+        <h2>語言能力</h2>
+        <p><strong>英文：</strong>學測 11 級 / 聽力 A</p>
+        <p><strong>中文：</strong>中檢中高級通過</p>
+        <p><strong>韓文：</strong>自主學習中</p>
       </section>
 
       <section>
         <h2>個人特質</h2>
-        <p style="color:var(--muted); font-size:13px;">熱衷舞蹈表演，具備活動企劃與團隊協作經驗。 [cite: 23, 24, 25]</p>
+        <p style="font-size: 13px; color: var(--muted);">熱衷舞蹈表演，具備豐富的活動企劃與團隊協作經驗。</p>
       </section>
     </aside>
-  </article>
+  </div>
 </body>
 </html>
